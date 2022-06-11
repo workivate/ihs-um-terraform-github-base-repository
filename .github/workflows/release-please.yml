@@ -1,0 +1,12 @@
+jobs:
+  release-please:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: google-github-actions/release-please-action@v3.2.5
+      with:
+        release-type: terraform-module
+name: release-please
+on:
+  push:
+    branches:
+    - main
